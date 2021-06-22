@@ -108,8 +108,6 @@ a:active {
 }
 
 
-
-
 /* --- Principal >> Últimas postagens --- */
 #ultimas-postagens {
   margin-top: 3em;
@@ -135,6 +133,21 @@ a:active {
   font-size: 16px;
   line-height: 22px;
   display: inline-block;
+}
+
+@keyframes brilhando {
+  from {
+    color: #ff00ff;
+    
+  }
+  to {
+    color: #00ff00;
+  }
+}
+
+#ultimas-postagens .post.novidade::before {
+  content: "Novidade!";
+  animation: brilhando alternate 1s infinite;
 }
 
 
