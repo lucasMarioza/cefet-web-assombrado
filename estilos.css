@@ -298,3 +298,29 @@ a:active {
   border-color: currentColor;
   box-shadow: none;
 }
+
+.boo {
+  position: fixed;
+  width: 40px;
+  opacity: 0.5;
+  transition: opacity 300ms;
+}
+
+.boo:hover {
+  opacity: 1;
+}
+
+#boo-1.boo {
+  top: 10%;
+  right: 50%;
+}
+
+#boo-2.boo {
+  top: 20%;
+  right: 80%;
+}
+
+#boo-3.boo {
+  top: 60%;
+  right: 30%;
+}
