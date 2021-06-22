@@ -93,10 +93,22 @@ a:active {
   margin-left: 2.5%;
   margin-right: 2.5%;
   display: inline-block;
+  position: relative;
 }
 
 #posts-principais .post .titulo {
   text-shadow: 1px 1px black;
+  position: absolute;
+  top: 6px;
+  background-color: #ffffff99;
+  opacity: 0;
+  max-height: 0;
+}
+
+#posts-principais .post:hover .titulo {
+  max-height: 100%;
+  opacity: 1;
+  transition: opacity 500ms, max-height 500ms;
 }
 
 #posts-principais .post img {
